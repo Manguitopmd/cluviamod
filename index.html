@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cluvia transforma la educación profesional con minicursos prácticos y CluviaClub, una comunidad global para emprendedores, profesionales y docentes.">
+    <meta name="keywords" content="educación virtual, minicursos, CluviaClub, emprendedores, profesionales, docentes, aprendizaje práctico">
+    <title>Cluvia - Transformando la educación profesional global</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white">
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="logo" aria-label="Cluvia Home">
+                <img class="lazyload h-12" data-src="images/logo-cluvia.png" alt="Cluvia Logo">
+            </a>
+            <div class="flex items-center">
+                <div class="nav-links md:flex hidden space-x-4">
+                    <a href="#hero" class="hvr-underline-from-center" aria-label="Inicio">Inicio</a>
+                    <a href="#propuesta" class="hvr-underline-from-center" aria-label="Cluvia">Cluvia</a>
+                    <a href="#cursos" class="hvr-underline-from-center" aria-label="Cursos">Cursos</a>
+                    <a href="#cluviaclub" class="hvr-underline-from-center" aria-label="CluviaClub">CluviaClub</a>
+                    <a href="#planes" class="hvr-underline-from-center" aria-label="Planes">Planes</a>
+                    <a href="#nosotros" class="hvr-underline-from-center" aria-label="Nosotros">Nosotros</a>
+                    <a href="#contacto" class="hvr-underline-from-center" aria-label="Contacto">Contacto</a>
+                </div>
+                <button class="hamburger md:hidden" aria-label="Toggle Menu">
+                    <i class="fas fa-bars text-2xl text-azul-cluvia"></i>
+                </button>
+                <div class="nav-links-mobile">
+                    <a href="#hero" aria-label="Inicio">Inicio</a>
+                    <a href="#propuesta" aria-label="Cluvia">Cluvia</a>
+                    <a href="#cursos" aria-label="Cursos">Cursos</a>
+                    <a href="#cluviaclub" aria-label="CluviaClub">CluviaClub</a>
+                    <a href="#planes" aria-label="Planes">Planes</a>
+                    <a href="#nosotros" aria-label="Nosotros">Nosotros</a>
+                    <a href="#contacto" aria-label="Contacto">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="relative animate__animated animate__fadeIn">
+            <div class="swiper hero-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide relative text-center">
+                        <img class="lazyload hero-bg" data-src="images/slider/hero-slide1.jpg" alt="Aprende con Cluvia">
+                        <div class="particles"></div>
+                        <div class="container mx-auto px-6 relative z-10">
+                            <h1 class="text-3xl md:text-5xl font-bold text-azul-cluvia mb-6 font-montserrat animate__animated animate__bounceIn">Aprende hoy, triunfa mañana</h1>
+                            <p class="text-lg md:text-xl text-gris-oscuro mb-8 font-lato animate__animated animate__fadeInUp">Domina habilidades prácticas en semanas con minicursos diseñados para ti.</p>
+                            <a href="https://learn.cluviaproedu.com" class="btn hvr-grow animate__animated animate__pulse" aria-label="Empieza Ahora">¡Empieza Ahora!</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide relative text-center">
+                        <img class="lazyload hero-bg" data-src="images/slider/hero-slide2.jpg" alt="Conecta con CluviaClub">
+                        <div class="particles"></div>
+                        <div class="container mx-auto px-6 relative z-10">
+                            <h1 class="text-3xl md:text-5xl font-bold text-azul-cluvia mb-6 font-montserrat animate__animated animate__bounceIn">Conecta y crece sin límites</h1>
+                            <p class="text-lg md:text-xl text-gris-oscuro mb-8 font-lato animate__animated animate__fadeInUp">Únete a CluviaClub y forma parte de una comunidad global de éxito.</p>
+                            <a href="https://club.cluviaproedu.com" class="btn btn-secondary hvr-grow animate__animated animate__pulse" aria-label="Únete Hoy">¡Únete Hoy!</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide relative text-center">
+                        <img class="lazyload hero-bg" data-src="images/slider/hero-slide3.jpg" alt="Transforma tu futuro">
+                        <div class="particles"></div>
+                        <div class="container mx-auto px-6 relative z-10">
+                            <h1 class="text-3xl md:text-5xl font-bold text-azul-cluvia mb-6 font-montserrat animate__animated animate__ elephantsbounceIn">Tu éxito empieza aquí</h1>
+                            <p class="text-lg md:text-xl text-gris-oscuro mb-8 font-lato animate__animated animate__fadeInUp">Adquiere habilidades clave para destacar en un mundo competitivo.</p>
+                            <a href="https://learn.cluviaproedu.com" class="btn hvr-grow animate__animated animate__pulse" aria-label="Descubre Cómo">¡Descubre Cómo!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"><i class="fas fa-arrow-circle-left"></i></div>
+                <div class="swiper-button-next"><i class="fas fa-arrow-circle-right"></i></div>
+            </div>
+        </section>
+
+        <section id="propuesta" class="py-16 bg-gradient-light text-center animate__animated animate__slideInUp">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-white mb-6 font-montserrat text-shadow">Cluvia</h2>
+                <p class="text-lg text-white mb-8 font-lato text-shadow">Innovamos para que aprendas y crezcas con excelencia.</p>
+                <div class="cluvia-cards grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="card bg-white p-6 rounded-lg shadow-md hvr-float animate__animated animate__fadeInUp">
+                        <i class="fas fa-book-open text-4xl text-azul-cluvia mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gris-oscuro mb-2 font-montserrat">Minicursos</h3>
+                        <p class="text-gris-oscuro font-lato">Cursos prácticos y accesibles para todos.</p>
+                    </div>
+                    <div class="card bg-white p-6 rounded-lg shadow-md hvr-float animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                        <i class="fas fa-arrow-up text-4xl text-azul-cluvia mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gris-oscuro mb-2 font-montserrat">Crecimiento</h3>
+                        <p class="text-gris-oscuro font-lato">Desarrollo profesional a tu ritmo.</p>
+                    </div>
+                    <div class="card bg-white p-6 rounded-lg shadow-md hvr-float animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                        <i class="fas fa-users text-4xl text-azul-cluvia mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gris-oscuro mb-2 font-montserrat">Comunidad</h3>
+                        <p class="text-gris-oscuro font-lato">Únete a CluviaClub y conecta globalmente.</p>
+                    </div>
+                </div>
+                <a href="https://learn.cluviaproedu.com" class="btn btn-secondary hvr-grow mt-8" aria-label="Explora cómo funciona">Explora</a>
+            </div>
+        </section>
+
+        <section class="power-quote py-16 bg-gradient-soft text-center animate__animated animate__fadeIn">
+            <div class="container mx-auto px-6">
+                <h2 class="text-2xl md:text-3xl font-semibold text-gris-oscuro font-montserrat italic">"El conocimiento es el primer paso hacia la grandeza."</h2>
+            </div>
+        </section>
+
+        <section id="cursos" class="py-16 bg-gradient-soft text-center animate__animated animate__slideInUp">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-azul-cluvia mb-6 font-montserrat">Cursos</h2>
+                <p class="text-lg text-gris-oscuro mb-8 font-lato">Habilidades prácticas para emprendedores, profesionales y docentes.</p>
+                <div class="swiper cursos-swiper">
+                    <div class="swiper-wrapper">
+                        <article class="swiper-slide card bg-white p-6 rounded-lg shadow-md hvr-grow">
+                            <img class="lazyload w-full h-40 object-cover rounded-md mb-4" data-src="images/cursos/curso-emprende.jpg" alt="Emprende con Éxito">
+                            <h3 class="text-xl font-semibold text-gris-oscuro mb-2 font-montserrat">Emprende con Éxito</h3>
+                            <p class="text-gris-oscuro mb-4 font-lato">De la idea a un negocio real en 4 semanas.</p>
+                            <a href="https://learn.cluviaproedu.com" class="btn hvr-grow" aria-label="Ver más sobre Emprende con Éxito">Ver más</a>
+                        </article>
+                        <article class="swiper-slide card bg-white p-6 rounded-lg shadow-md hvr-grow">
+                            <img class="lazyload w-full h-40 object-cover rounded-md mb-4" data-src="images/cursos/curso-ceviche.jpg" alt="Cevichería en Casa">
+                            <h3 class="text-xl font-semibold text-gris-oscuro mb-2 font-montserrat">Cevichería en Casa</h3>
+                            <p class="text-gris-oscuro mb-4 font-lato">Prepara ceviches para vender desde casa en 3 semanas.</p>
+                            <a href="https://learn.cluviaproedu.com" class="btn hvr-grow" aria-label="Ver más sobre Cevichería en Casa">Ver más</a>
+                        </article>
+                        <article class="swiper-slide card bg-white p-6 rounded-lg shadow-md hvr-grow">
+                            <img class="lazyload w-full h-40 object-cover rounded-md mb-4" data-src="images/cursos/curso-pollo.jpg" alt="Pollo a la Brasa">
+                            <h3 class="text-xl font-semibold text-gris-oscuro mb-2 font-montserrat">Pollo a la Brasa</h3>
+                            <p class="text-gris-oscuro mb-4 font-lato">Monta un negocio infalible en 4 semanas.</p>
+                            <a href="https://learn.cluviaproedu.com" class="btn hvr-grow" aria-label="Ver más sobre Pollo a la Brasa">Ver más</a>
+                        </article>
+                        <article class="swiper-slide card bg-white p-6 rounded-lg shadow-md hvr-grow">
+                            <img class="lazyload w-full h-40 object-cover rounded-md mb-4" data-src="images/cursos/curso-anticuchos.jpg" alt="Anticuchos y Picarones">
+                            <h3 class="text-xl font-semibold text-gris-oscuro mb-2 font-montserrat">Anticuchos y Picarones</h3>
+                            <p class="text-gris-oscuro mb-4 font-lato">Sabor callejero para vender en 2 semanas.</p>
+                            <a href="https://learn.cluviaproedu.com" class="btn hvr-grow" aria-label="Ver más sobre Anticuchos y Picarones">Ver más</a>
+                        </article>
+                        <article class="swiper-slide card bg-white p-6 rounded-lg shadow-md hvr-grow">
+                            <img class="lazyload w-full h-40 object-cover rounded-md mb-4" data-src="images/cursos/curso-ropa.jpg" alt="Ropa Segunda Mano">
+                            <h3 class="text-xl font-semibold text-gris-oscuro mb-2 font-montserrat">Ropa Segunda Mano</h3>
+                            <p class="text-gris-oscuro mb-4 font-lato">Compra y vende con ganancia en 2 semanas.</p>
+                            <a href="https://learn.cluviaproedu.com" class="btn hvr-grow" aria-label="Ver más sobre Ropa Segunda Mano">Ver más</a>
+                        </article>
+                        <article class="swiper-slide card bg-white p-6 rounded-lg shadow-md hvr-grow">
+                            <img class="lazyload w-full h-40 object-cover rounded-md mb-4" data-src="images/cursos/curso-polos.jpg" alt="Personaliza Polos">
+                            <h3 class="text-xl font-semibold text-gris-oscuro mb-2 font-montserrat">Personaliza Polos</h3>
+                            <p class="text-gris-oscuro mb-4 font-lato">Estampados que venden en 3 semanas.</p>
+                            <a href="https://learn.cluviaproedu.com" class="btn hvr-grow" aria-label="Ver más sobre Personaliza Polos">Ver más</a>
+                        </article>
+                        <article class="swiper-slide card bg-white p-6 rounded-lg shadow-md hvr-grow">
+                            <img class="lazyload w-full h-40 object-cover rounded-md mb-4" data-src="images/cursos/curso-finanzas.jpg" alt="Finanzas sin Miedo">
+                            <h3 class="text-xl font-semibold text-gris-oscuro mb-2 font-montserrat">Finanzas sin Miedo</h3>
+                            <p class="text-gris-oscuro mb-4 font-lato">Maneja tu dinero sin estrés en 3 semanas.</p>
+                            <a href="https://learn.cluviaproedu.com" class="btn hvr-grow" aria-label="Ver más sobre Finanzas sin Miedo">Ver más</a>
+                        </article>
+                        <article class="swiper-slide card bg-white p-6 rounded-lg shadow-md hvr-grow">
+                            <img class="lazyload w-full h-40 object-cover rounded-md mb-4" data-src="images/cursos/curso-ventas.jpg" alt="Ventas que Impactan">
+                            <h3 class="text-xl font-semibold text-gris-oscuro mb-2 font-montserrat">Ventas que Impactan</h3>
+                            <p class="text-gris-oscuro mb-4 font-lato">Cierra ventas en 2 semanas.</p>
+                            <a href="https://learn.cluviaproedu.com" class="btn hvr-grow" aria-label="Ver más sobre Ventas que Impactan">Ver más</a>
+                        </article>
+                        <article class="swiper-slide card bg-white p-6 rounded-lg shadow-md hvr-grow">
+                            <img class="lazyload w-full h-40 object-cover rounded-md mb-4" data-src="images/cursos/curso-ensenanza.jpg" alt="Enseña como Experto">
+                            <h3 class="text-xl font-semibold text-gris-oscuro mb-2 font-montserrat">Enseña como Experto</h3>
+                            <p class="text-gris-oscuro mb-4 font-lato">Herramientas digitales para clases en 3 semanas.</p>
+                            <a href="https://learn.cluviaproedu.com" class="btn hvr-grow" aria-label="Ver más sobre Enseña como Experto">Ver más</a>
+                        </article>
+                        <article class="swiper-slide card bg-white p-6 rounded-lg shadow-md hvr-grow">
+                            <img class="lazyload w-full h-40 object-cover rounded-md mb-4" data-src="images/cursos/curso-clasesonline.jpg" alt="Clases Online que Enganchan">
+                            <h3 class="text-xl font-semibold text-gris-oscuro mb-2 font-montserrat">Clases Online que Enganchan</h3>
+                            <p class="text-gris-oscuro mb-4 font-lato">Diseña sesiones virtuales en 3 semanas.</p>
+                            <a href="https://learn.cluviaproedu.com" class="btn hvr-grow" aria-label="Ver más sobre Clases Online que Enganchan">Ver más</a>
+                        </article>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"><i class="fas fa-arrow-circle-left"></i></div>
+                    <div class="swiper-button-next"><i class="fas fa-arrow-circle-right"></i></div>
+                </div>
+                <a href="https://learn.cluviaproedu.com" class="btn btn-secondary hvr-grow mt-8 inline-block animate__animated animate__pulse" aria-label="Explora todos los cursos">Explora</a>
+            </div>
+        </section>
+
+        <section id="cluviaclub" class="py-16 bg-gradient-light text-center animate__animated animate__slideInUp relative overflow-hidden">
+            <div class="container mx-auto px-6 relative z-10">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 font-montserrat text-shadow animate__animated animate__zoomIn">CluviaClub: Tu red global de éxito</h2>
+                <p class="text-xl md:text-2xl text-white mb-8 font-lato text-shadow animate__animated animate__fadeInUp">Conecta, aprende y crece con una comunidad exclusiva de visionarios.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="relative club-image-container">
+                        <img class="lazyload w-full h-80 md:h-96 object-cover rounded-lg shadow-xl transform md:-rotate-3 transition-transform duration-500 hover:rotate-0" data-src="images/cluviaclub.jpg" alt="CluviaClub Comunidad">
+                        <div class="absolute top-4 left-4 bg-naranja-cluvia text-white px-4 py-2 rounded-full font-montserrat font-semibold text-sm animate__animated animate__pulse animate__infinite">¡Únete hoy!</div>
+                    </div>
+                    <div class="text-left space-y-6">
+                        <div class="club-features grid grid-cols-1 gap-4">
+                            <div class="feature-item bg-white p-6 rounded-lg shadow-md transform transition-all duration-300 hover:scale-105 animate__animated animate__fadeInUp">
+                                <i class="fas fa-comment-alt text-3xl text-azul-cluvia mb-4"></i>
+                                <h3 class="font-semibold text-gris-oscuro font-montserrat">Foros exclusivos</h3>
+                                <p class="text-gris-oscuro font-lato text-sm">Intercambia ideas con líderes globales.</p>
+                            </div>
+                            <div class="feature-item bg-white p-6 rounded-lg shadow-md transform transition-all duration-300 hover:scale-105 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                                <i class="fas fa-calendar-check text-3xl text-azul-cluvia mb-4"></i>
+                                <h3 class="font-semibold text-gris-oscuro font-montserrat">Webinars premium</h3>
+                                <p class="text-gris-oscuro font-lato text-sm">Aprende de expertos en vivo.</p>
+                            </div>
+                            <div class="feature-item bg-white p-6 rounded-lg shadow-md transform transition-all duration-300 hover:scale-105 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                                <i class="fas fa-network-wired text-3xl text-azul-cluvia mb-4"></i>
+                                <h3 class="font-semibold text-gris-oscuro font-montserrat">Networking real</h3>
+                                <p class="text-gris-oscuro font-lato text-sm">Construye relaciones que impulsan tu carrera.</p>
+                            </div>
+                        </div>
+                        <blockquote class="text-white italic font-lato text-lg border-l-4 border-naranja-cluvia pl-4 animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+                            "CluviaClub me conectó con mentores que cambiaron mi perspectiva." - Ana, Emprendedora
+                        </blockquote>
+                        <a href="https://club.cluviaproedu.com" class="btn btn-secondary text-lg px-8 py-3 hvr-grow animate__animated animate__pulse" aria-label="Únete a CluviaClub ahora">¡Únete ahora!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute inset-0 bg-azul-cluvia opacity-10 transform skew-y-6"></div>
+        </section>
+
+        <section id="planes" class="py-16 bg-gradient-soft text-center animate__animated animate__fadeInUp">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-azul-cluvia mb-6 font-montserrat">Planes</h2>
+                <p class="text-lg text-gris-oscuro mb-8 font-lato">Accede a la educación que transformará tu futuro.</p>
+                <div class="swiper planes-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide bg-blue-100 p-6 rounded-lg shadow-md hvr-grow-interactive">
+                            <h3 class="text-xl font-semibold text-azul-cluvia mb-2 font-montserrat">Elite</h3>
+                            <p class="text-2xl font-bold text-gris-oscuro mb-4 font-montserrat">$24.99/mes</p>
+                            <p class="text-gris-oscuro mb-4 font-lato">Videos, asesorías y CluviaClub completo.</p>
+                            <a href="https://www.cluviaproedu.com/planes" class="btn hvr-grow" onclick="showAlert()" aria-label="Suscribirse a Elite">Suscribirse</a>
+                        </div>
+                        <div class="swiper-slide bg-orange-100 p-6 rounded-lg shadow-md border-2 border-naranja-cluvia hvr-grow-interactive">
+                            <h3 class="text-xl font-semibold text-azul-cluvia mb-2 font-montserrat">Start</h3>
+                            <p class="text-2xl font-bold text-gris-oscuro mb-4 font-montserrat">$9.99/mes</p>
+                            <p class="text-gris-oscuro mb-4 font-lato">Minicursos en PDF y acceso básico a CluviaClub.</p>
+                            <a href="https://www.cluviaproedu.com/planes" class="btn hvr-grow" onclick="showAlert()" aria-label="Suscribirse a Start">Suscribirse</a>
+                        </div>
+                        <div class="swiper-slide bg-green-100 p-6 rounded-lg shadow-md hvr-grow-interactive">
+                            <h3 class="text-xl font-semibold text-azul-cluvia mb-2 font-montserrat">Annual</h3>
+                            <p class="text-2xl font-bold text-gris-oscuro mb-4 font-montserrat">$199/año</p>
+                            <p class="text-gris-oscuro mb-4 font-lato">Todo lo de Elite con 16% de descuento.</p>
+                            <a href="https://www.cluviaproedu.com/planes" class="btn hvr-grow" onclick="showAlert()" aria-label="Suscribirse a Annual">Suscribirse</a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"><i class="fas fa-arrow-circle-left"></i></div>
+                    <div class="swiper-button-next"><i class="fas fa-arrow-circle-right"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recursos" class="py-16 bg-gradient-light text-center animate__animated animate__slideInUp">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-white mb-6 font-montserrat text-shadow">Recursos</h2>
+                <p class="text-lg text-white mb-8 font-lato text-shadow">Descarga herramientas prácticas para empezar hoy.</p>
+                <form id="resources-form" class="max-w-md mx-auto mb-8" x-data="{ email: '' }" @submit.prevent="submitResourcesForm">
+                    <input type="email" x-model="email" placeholder="Tu correo electrónico" class="w-full p-3 rounded-md mb-4 font-lato border-0 shadow-md hvr-grow bg-white text-gris-oscuro">
+                    <button type="submit" class="btn btn-secondary hvr-grow animate__animated animate__pulse">Descarga</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="power-quote py-16 bg-gradient-soft text-center animate__animated animate__fadeIn">
+            <div class="container mx-auto px-6">
+                <h2 class="text-2xl md:text-3xl font-semibold text-gris-oscuro font-montserrat italic">"Tu potencial se mide por lo que estás dispuesto a aprender."</h2>
+            </div>
+        </section>
+
+        <section id="nosotros" class="py-16 text-center animate__animated animate__fadeInUp relative bg-gradient-dark">
+    <div class="container mx-auto px-6 relative z-10">
+        <h2 class="text-4xl font-bold text-white mb-6 font-montserrat text-shadow">Nosotros</h2>
+        <p class="text-lg text-white mb-8 font-lato max-w-2xl mx-auto text-shadow">
+            Cluvia transforma la educación profesional con un enfoque en innovación, excelencia y el compromiso con el aprendizaje continuo.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div class="video-container max-w-lg mx-auto hvr-grow">
+                <iframe src="" frameborder="0" allowfullscreen aria-label="Video sobre Nosotros" class="rounded-lg shadow-lg"></iframe>
+            </div>
+            <ul class="text-left text-white font-lato space-y-6">
+                <li class="flex items-start animate__animated animate__fadeInLeft hvr-grow">
+                    <i class="fas fa-check-circle text-naranja-cluvia mr-3 text-2xl"></i> 
+                    <div><strong>Misión:</strong> Empoderar a los profesionales con educación práctica y accesible, que les permita desarrollarse y destacarse en su campo.</div>
+                </li>
+                <li class="flex items-start animate__animated animate__fadeInLeft hvr-grow" style="animation-delay: 0.2s;">
+                    <i class="fas fa-check-circle text-naranja-cluvia mr-3 text-2xl"></i> 
+                    <div><strong>Visión:</strong> Ser líderes en la educación virtual global, creando un impacto real en el desarrollo profesional de cada persona.</div>
+                </li>
+                <li class="flex items-start animate__animated animate__fadeInLeft hvr-grow" style="animation-delay: 0.4s;">
+                    <i class="fas fa-check-circle text-naranja-cluvia mr-3 text-2xl"></i> 
+                    <div><strong>Valores:</strong> Compromiso con la enseñanza, la innovación constante, la búsqueda de la excelencia y la creación de una comunidad sólida y de apoyo mutuo.</div>
+                </li>
+            </ul>
+        </div>
+        <a href="https://www.cluviaproedu.com/nosotros" class="btn btn-secondary hvr-grow" aria-label="Conoce nuestra visión">Conoce más sobre nuestra visión</a>
+    </div>
+</section>
+
+
+        <section id="impacto" class="py-16 bg-gradient-light text-center animate__animated animate__slideInUp relative">
+            <img class="lazyload w-full h-full object-cover absolute top-0 left-0 z-0 opacity-70" data-src="images/impacto.jpg" alt="Impacto Social">
+            <div class="container mx-auto px-6 relative z-10">
+                <h2 class="text-4xl font-bold text-white mb-6 font-montserrat text-shadow animate__animated animate__zoomIn">Impacto</h2>
+                <p class="text-xl text-white mb-8 font-lato text-shadow animate__animated animate__fadeInUp">Comprometidos con empoderar a 10,000 personas en comunidades desfavorecidas.</p>
+                <a href="https://www.cluviaproedu.com/impacto" class="btn btn-secondary hvr-grow" aria-label="Conoce nuestro compromiso">Compromiso</a>
+            </div>
+        </section>
+
+        <section id="testimonios" class="py-16 bg-gradient-soft text-center animate__animated animate__fadeInUp">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-azul-cluvia mb-6 font-montserrat">Testimonios</h2>
+        <div class="swiper testimonios-swiper max-w-5xl mx-auto">
+            <div class="swiper-wrapper">
+                <article class="swiper-slide bg-gris-claro p-8 rounded-xl shadow-lg hvr-grow-interactive">
+                    <img class="lazyload w-24 h-24 rounded-full mx-auto mb-4 border-4 border-azul-cluvia" data-src="images/testimonios/testimonio-juan.jpg" alt="Juan">
+                    <h3 class="text-xl font-semibold text-azul-cluvia mb-2 font-montserrat">Juan, Emprendedor</h3>
+                    <p class="text-gris-oscuro italic font-lato">"Cluvia me dio las herramientas para lanzar mi negocio en semanas."</p>
+                    <div class="mt-4 text-naranja-cluvia">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </article>
+                <article class="swiper-slide bg-gris-claro p-8 rounded-xl shadow-lg hvr-grow-interactive">
+                    <img class="lazyload w-24 h-24 rounded-full mx-auto mb-4 border-4 border-azul-cluvia" data-src="images/testimonios/testimonio-maria.jpg" alt="María">
+                    <h3 class="text-xl font-semibold text-azul-cluvia mb-2 font-montserrat">María, Docente</h3>
+                    <p class="text-gris-oscuro italic font-lato">"Transformé mis clases con los cursos prácticos de Cluvia."</p>
+                    <div class="mt-4 text-naranja-cluvia">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                </article>
+                <article class="swiper-slide bg-gris-claro p-8 rounded-xl shadow-lg hvr-grow-interactive">
+                    <img class="lazyload w-24 h-24 rounded-full mx-auto mb-4 border-4 border-azul-cluvia" data-src="images/testimonios/testimonio-sofia.jpg" alt="Sofía">
+                    <h3 class="text-xl font-semibold text-azul-cluvia mb-2 font-montserrat">Sofía, Emprendedora</h3>
+                    <p class="text-gris-oscuro italic font-lato">"Gracias a 'Personaliza Polos', mi negocio de estampados despegó rápido."</p>
+                    <div class="mt-4 text-naranja-cluvia">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </article>
+                <article class="swiper-slide bg-gris-claro p-8 rounded-xl shadow-lg hvr-grow-interactive">
+                    <img class="lazyload w-24 h-24 rounded-full mx-auto mb-4 border-4 border-azul-cluvia" data-src="images/testimonios/testimonio-carlos.jpg" alt="Carlos">
+                    <h3 class="text-xl font-semibold text-azul-cluvia mb-2 font-montserrat">Carlos, Profesional</h3>
+                    <p class="text-gris-oscuro italic font-lato">"El curso de finanzas me ayudó a organizar mi emprendimiento sin complicaciones."</p>
+                    <div class="mt-4 text-naranja-cluvia">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    </div>
+                </article>
+                <article class="swiper-slide bg-gris-claro p-8 rounded-xl shadow-lg hvr-grow-interactive">
+                    <img class="lazyload w-24 h-24 rounded-full mx-auto mb-4 border-4 border-azul-cluvia" data-src="images/testimonios/testimonio-lucia.jpg" alt="Lucía">
+                    <h3 class="text-xl font-semibold text-azul-cluvia mb-2 font-montserrat">Lucía, Docente</h3>
+                    <p class="text-gris-oscuro italic font-lato">"Mis alumnos están más motivados desde que uso técnicas de Cluvia."</p>
+                    <div class="mt-4 text-naranja-cluvia">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                </article>
+                <article class="swiper-slide bg-gris-claro p-8 rounded-xl shadow-lg hvr-grow-interactive">
+                    <img class="lazyload w-24 h-24 rounded-full mx-auto mb-4 border-4 border-azul-cluvia" data-src="images/testimonios/testimonio-pedro.jpg" alt="Pedro">
+                    <h3 class="text-xl font-semibold text-azul-cluvia mb-2 font-montserrat">Pedro, Emprendedor</h3>
+                    <p class="text-gris-oscuro italic font-lato">"Con 'Cevichería en Casa', ya vendo a domicilio y mis clientes lo aman."</p>
+                    <div class="mt-4 text-naranja-cluvia">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    </div>
+                </article>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"><i class="fas fa-arrow-circle-left"></i></div>
+            <div class="swiper-button-next"><i class="fas fa-arrow-circle-right"></i></div>
+        </div>
+    </div>
+</section>
+
+        <section id="cta-final" class="relative py-16 bg-gradient-light text-center animate__animated animate__fadeIn">
+            <img class="lazyload hero-bg" data-src="images/cta-final-bg.jpg" alt="CTA Background">
+            <div class="container mx-auto px-6 relative z-10">
+                <h2 class="text-4xl font-bold text-white mb-6 font-montserrat text-shadow animate__animated animate__bounceIn">¡Transforma tu futuro hoy!</h2>
+                <p id="cta-text" class="text-lg text-white mb-8 font-lato text-shadow animate__animated animate__fadeInUp">Únete a Cluvia y alcanza la excelencia profesional.</p>
+                <a href="https://www.cluviaproedu.com" class="btn hvr-grow animate__animated animate__pulse" onclick="showAlert()" aria-label="Comienza Ahora">Comienza</a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto" class="bg-gradient-soft text-gris-oscuro py-8 animate__animated animate__fadeInUp">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-azul-cluvia mb-6 font-montserrat text-shadow text-center">Contacto</h2>
+            <form id="contact-form" class="max-w-md mx-auto mb-8" x-data="{ name: '', email: '', message: '' }" @submit.prevent="submitContactForm">
+                <input type="text" x-model="name" placeholder="Tu nombre" class="w-full p-3 rounded-md mb-4 font-lato border-0 shadow-md hvr-grow bg-white text-gris-oscuro">
+                <input type="email" x-model="email" placeholder="Tu correo electrónico" class="w-full p-3 rounded-md mb-4 font-lato border-0 shadow-md hvr-grow bg-white text-gris-oscuro">
+                <textarea x-model="message" placeholder="Tu mensaje" class="w-full p-3 rounded-md mb-4 font-lato border-0 shadow-md h-32 hvr-grow bg-white text-gris-oscuro"></textarea>
+                <button type="submit" class="btn btn-secondary hvr-grow animate__animated animate__pulse">Enviar</button>
+            </form>
+            <div class="footer-content" x-data="{ expanded: false }">
+                <button class="footer-toggle mx-auto flex items-center justify-center text-gris-oscuro cursor-pointer bg-transparent border-none p-2 rounded-full hover:bg-naranja-cluvia hover:text-white transition-all duration-300" @click="expanded = !expanded">
+                    <span class="font-lato">© 2025 Cluvia - Desarrollado por Manguito PMD</span>
+                    <i class="fas fa-chevron-down ml-2 transition-transform duration-300" :class="{ 'rotate-180': expanded }"></i>
+                </button>
+                <div class="footer-expanded grid grid-cols-1 md:grid-cols-3 gap-8 text-center mt-4" x-show="expanded">
+                    <div class="footer-column">
+                        <h3 class="text-xl font-semibold mb-4 font-montserrat text-azul-cluvia">Sobre Cluvia</h3>
+                        <p class="font-lato">Transformamos la educación profesional con enseñanza práctica y comunidad.</p>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="text-xl font-semibold mb-4 font-montserrat text-azul-cluvia">Enlaces</h3>
+                        <a href="#hero" class="block mb-2 hover:text-naranja-cluvia font-lato transition-colors duration-300 hvr-grow" aria-label="Inicio">Inicio</a>
+                        <a href="#cursos" class="block mb-2 hover:text-naranja-cluvia font-lato transition-colors duration-300 hvr-grow" aria-label="Cursos">Cursos</a>
+                        <a href="#cluviaclub" class="block mb-2 hover:text-naranja-cluvia font-lato transition-colors duration-300 hvr-grow" aria-label="CluviaClub">CluviaClub</a>
+                        <a href="#planes" class="block mb-2 hover:text-naranja-cluvia font-lato transition-colors duration-300 hvr-grow" aria-label="Planes">Planes</a>
+                        <a href="#nosotros" class="block mb-2 hover:text-naranja-cluvia font-lato transition-colors duration-300 hvr-grow" aria-label="Nosotros">Nosotros</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="text-xl font-semibold mb-4 font-montserrat text-azul-cluvia">Contacto</h3>
+                        <p class="mb-2 font-lato">contacto@cluviaproedu.com</p>
+                        <p class="mb-2 font-lato">WhatsApp: +51 983 348 121</p>
+                        <p class="flex justify-center gap-4">
+                            <a href="https://instagram.com/cluviaproedu" class="hover:text-naranja-cluvia transition-colors duration-300 hvr-grow" aria-label="Instagram"><i class="fab fa-instagram text-xl"></i></a>
+                            <a href="https://twitter.com/cluviaproedu" class="hover:text-naranja-cluvia transition-colors duration-300 hvr-grow" aria-label="Twitter"><i class="fab fa-twitter text-xl"></i></a>
+                            <a href="https://facebook.com/cluviaproedu" class="hover:text-naranja-cluvia transition-colors duration-300 hvr-grow" aria-label="Facebook"><i class="fab fa-facebook text-xl"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/51983348121" class="whatsapp-btn fixed bottom-20 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 z-50 hvr-grow" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+    <a href="#hero" class="scroll-top-btn fixed bottom-6 left-6 btn hvr-grow text-white shadow-lg transition-all duration-300 z-50" aria-label="Subir al inicio">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </a>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
